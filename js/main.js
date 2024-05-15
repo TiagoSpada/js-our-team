@@ -1,4 +1,4 @@
-// MILESTONE 0 (creazione array di oggetti)
+/*****  MILESTONE 0 (creazione array di oggetti) *****/
 const team = [
     {
         nome: 'Wayne Barnett',
@@ -32,4 +32,16 @@ const team = [
     }
 ];
 
-console.log(team);
+// console.log(team);
+
+
+
+/**** MILESTONE 1 (stampa dell'array in conosle) ****/
+// ciclo tutto l'array di oggetti
+for (const person of team) { //person è un oggetto 
+    for(let key in person){ //ciclo tutte le chiavi di person
+        console.log(`${key}: ${person[key]}`); //stampo la chiave e il suo valore
+    }
+    console.log('-----------------'); // console log per dividere le persone
+}
+
