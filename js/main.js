@@ -40,7 +40,7 @@ const team = [
 // ciclo tutto l'array di oggetti
 for (const person of team) { //person è un oggetto 
     for(let key in person){ //ciclo tutte le chiavi di person
-        console.log(`${key}: ${person[key]}`); //stampo la chiave e il suo valore
+        console.log(`${key}: ${person[key]}`); //stampo la chiave e il suo valore in console
     }
     console.log('-----------------'); // console log per dividere le persone
 }
