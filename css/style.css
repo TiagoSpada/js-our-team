@@ -4,3 +4,39 @@
     box-sizing: border-box;
 }
 
+h1{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+
+li{
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.nome{
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.ruolo{
+    font-size: 18px;
+    margin-bottom: 5px;
+}

@@ -34,14 +34,40 @@ const team = [
 
 // console.log(team);
 
+const Ulpersone = document.getElementById('lista-persone'); //prendo la ul creata nel DOM
 
 
 /**** MILESTONE 1 (stampa dell'array in conosle) ****/
 // ciclo tutto l'array di oggetti
-for (const person of team) { //person è un oggetto 
-    for(let key in person){ //ciclo tutte le chiavi di person
+for (let person of team) { //person è un oggetto 
+    /*for(let key in person){ //ciclo tutte le chiavi di person
         console.log(`${key}: ${person[key]}`); //stampo la chiave e il suo valore in console
     }
     console.log('-----------------'); // console log per dividere le persone
+    */
+//    console.log(person);
+
+
+/*** MILESTONE 2 (stampa dell'array nel dom)***/
+    const li = document.createElement('li'); //creo li
+
+    const nome = document.createElement('div'); //creo un div
+    nome.innerText = person.nome; //scrivo nel div il nome della persona
+    // console.log(nome);
+    nome.classList.add('nome');
+    li.append(nome); //lo aggiungo a li
+
+    const ruolo = document.createElement('div');
+    ruolo.innerText = person.ruolo;
+    // console.log(ruolo);
+    ruolo.classList.add('ruolo');
+    li.append(ruolo);
+
+
+    const foto = document.createElement('div');
+    foto.innerText = person.foto;
+    // console.log(foto);
+    li.append(foto);
+    Ulpersone.append(li);
 }
 
