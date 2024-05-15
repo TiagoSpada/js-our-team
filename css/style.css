@@ -22,21 +22,27 @@ ul{
 
 
 li{
-    width: calc(100% / 3 - 20px);
-    margin: 10px;
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
     text-align: center;
     border: 1px solid black;
-    padding: 50px;
+    padding: 40px 30px;
     border-radius: 15px;
 }
 
 .nome{
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-bottom: 15px;
     font-weight: 600;
 }
 
 .ruolo{
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 22px;
 }
+
+.foto {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+

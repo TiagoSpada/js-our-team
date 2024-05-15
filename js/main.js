@@ -51,6 +51,15 @@ for (let person of team) { //person è un oggetto
 /*** MILESTONE 2 (stampa dell'array nel dom)***/
     const li = document.createElement('li'); //creo li
 
+
+
+    const foto = document.createElement('img');
+    foto.src = 'img/' + person.foto;
+    // console.log(foto);
+    foto.classList.add('foto');
+    li.append(foto);
+    Ulpersone.append(li);
+
     const nome = document.createElement('div'); //creo un div
     nome.innerText = person.nome; //scrivo nel div il nome della persona
     // console.log(nome);
@@ -62,12 +71,7 @@ for (let person of team) { //person è un oggetto
     // console.log(ruolo);
     ruolo.classList.add('ruolo');
     li.append(ruolo);
-
-
-    const foto = document.createElement('div');
-    foto.innerText = person.foto;
-    // console.log(foto);
-    li.append(foto);
-    Ulpersone.append(li);
 }
+
+    
 
